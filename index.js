@@ -22,15 +22,15 @@ function init() {
       },
       {
         message: "Choose a license",
-        name: "license",
+        name: "licenseUsed",
         type: "list",
-        choices: ["mit", "gpl"],
-        default: "mit",
+        choices: ["Mit", "gpl", "isc", "mpl-2.0", "unlicense"],
+        default: "unlicense",
       },
       {
-        message: "Who was involved in creating this?",
-        name: "involved",
-        default: "Good People",
+        message: "Who contributed in creating this?",
+        name: "contribution",
+        default: "ACME Corporation",
       },
       { message: "Date Created?", name: "dateCreated", default: "2021" },
       {
@@ -39,9 +39,29 @@ function init() {
         default: "The next big thing",
       },
       {
-        message: "Install insructions?",
+        message: "Install instructions?",
         name: "Install",
         default: "npm install",
+      },
+      {
+        message: "How will people use this application?",
+        name: "Usage",
+        default:
+          "This application will help developers create a good starter README.md",
+      },
+      {
+        message: "What is the user github email address?",
+        name: "github",
+        type: "input",
+        validate: function (value) {
+          const valid = typeof value === "string" && value.length > 0;
+          return valid || "Please enter your GitHub profile account name";
+        },
+      },
+      {
+        message: "any additional collaborators?",
+        name: "collab",
+        default: "None",
       },
     ])
     .then((answers) => {
@@ -65,7 +85,8 @@ init();
 function useTemplate(answers) {
   let finalTemp = template;
   Object.keys(answers).forEach(function (key) {
-    finalTemp = finalTemp.replace("{{" + key + "}}", answers[key]);
+    const regex = new RegExp("{{" + key + "}}", "g");
+    finalTemp = finalTemp.replace(regex, answers[key]);
   });
   fs.writeFileSync(__dirname + "/output/readme.md", finalTemp, "utf8");
 }
