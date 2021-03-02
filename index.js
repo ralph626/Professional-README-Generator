@@ -71,6 +71,8 @@ function init() {
     });
 }
 
+init();
+
 function useTemplate(answers) {
   let finalTemp = template;
   Object.keys(answers).forEach(function (key) {
