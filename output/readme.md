@@ -1,8 +1,8 @@
-# Best Project by: rea
+# ralph's project by: ralph
 
 ## Description
 
-The next big thing
+work
 
 ## Table of Contents (Optional)
 
@@ -23,28 +23,22 @@ This application will help developers create a good starter README.md
 
 ## Credits
 
-If any collaborators here: rea
+If any collaborators here: ralph
 
 ## License
 
-The license for this project is unlicense
+The license for this project is isc
 
 ## Badges
 
 ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
 
-<!-- Badges aren't _necessary_, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time. -->
-
 ## Contributing
 
-If other collaborators here: None
+If other collaborators here: Chad
 
 ## Tests
 
-<!-- should i remove this? -->
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them.
-
 ---
 
-© 2021 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

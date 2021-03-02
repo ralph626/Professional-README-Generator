@@ -2,6 +2,13 @@
 
 Quality README generator.
 
+# This is the Link to google drive to watch the video for README Generator
+
+https://drive.google.com/file/d/1CH4Ka4d1XlJKGmWmPz57b7sMwCtVHdZV/view?usp=sharing
+
+the first time I run the code I set all to default inserts
+the second I put custom inputs
+
 # 09 Node.js Homework: Professional README Generator
 
 ## Your Task
