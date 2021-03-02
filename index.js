@@ -12,7 +12,7 @@ function writeToFile(fileName, data) {}
 function init() {
   console.log("welcome to node!");
   //inquirer logic here\
-  // WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
+  // a description, installation instructions, usage information, contribution guidelines, and test instructions
   inquirer
     .prompt([
       {
@@ -70,17 +70,6 @@ function init() {
       useTemplate(answers);
     });
 }
-// new Promise((resolve, reject) => {
-//   reject();
-// })
-//   .then((message) => console.log(message))
-//   .catch((err) => console.log("something wen wrong"));
-// // function call to initialize program
-init();
-
-// for (let index = 0; index < 50000; index++) {
-//   console.log(index);
-// }
 
 function useTemplate(answers) {
   let finalTemp = template;
